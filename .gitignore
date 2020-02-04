@@ -17,7 +17,7 @@
 .gradle/
 build/
 
- IntelliJ
+# IntelliJ
 *.iml
 .idea/tasks.xml
 .idea/gradle.xml
