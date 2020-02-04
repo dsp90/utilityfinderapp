@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="8dp"
+    android:elevation="@dimen/cardview_default_elevation"
+    app:cardCornerRadius="@dimen/cardview_default_radius"
+    android:outlineAmbientShadowColor="@color/gray_dark"
+    android:outlineSpotShadowColor="@color/gray_dark">
+
+<RelativeLayout
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_brand_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        tools:src="@tools:sample/avatars"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_result_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:maxLines="2"
+        android:layout_alignTop="@+id/iv_brand_image"
+        android:layout_toEndOf="@+id/iv_brand_image"
+        android:layout_toStartOf="@+id/tv_result_rating"
+        android:lineSpacingMultiplier="0.8"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="@tools:sample/lorem"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_result_desc_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:ellipsize="end"
+        android:layout_below="@+id/tv_result_rating"
+        android:layout_alignStart="@+id/tv_result_title"
+        android:layout_marginTop="8dp"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        tools:text="@tools:sample/us_phones"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_result_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_alignParentEnd="true"
+        android:text="@string/def_rating"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_rounded_rect_green" />
+
+
+</RelativeLayout>
+</com.google.android.material.card.MaterialCardView>
